@@ -99,7 +99,7 @@ namespace My_Kargo
 		{
 			YuklemeResminiGoster(false);
 
-            CResultGirisDenemesi result = (CResultGirisDenemesi)args.Result; // OnGirisDenemesi'nden gelen sonuc
+			CResultGirisDenemesi result = (CResultGirisDenemesi)args.Result; // OnGirisDenemesi'nden gelen sonuc
 
 			if (result.m_Sorunsuz == false)
 				return;

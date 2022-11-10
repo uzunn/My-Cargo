@@ -422,13 +422,13 @@ namespace My_Kargo
 			{
 				cmd.ExecuteNonQuery();
 				MessageBox.Show("Basariyla Gonderildi.");
-                args.Result = true;
-            }
+				args.Result = true;
+			}
 			catch (Exception ex)
 			{
 				MessageBox.Show(ex.Message);
-                args.Result = false;
-            }
+				args.Result = false;
+			}
 
 			Globals.CloseConnection();
 		}
@@ -473,14 +473,14 @@ namespace My_Kargo
 				if (c is TextBox)
 					c.Text = "";
 			}
-            /*URUN BILGILERI*/
+			/*URUN BILGILERI*/
 
-            cboxTur.SelectedIndex = (int)EKARGOTIP.ZARF;
+			cboxTur.SelectedIndex = (int)EKARGOTIP.ZARF;
 
-            //Adres bilgilerini sıfırlar
-            if (cboxIl.Items.Count > 0)
-                cboxIl.SelectedIndex = 0;
-        }
+			//Adres bilgilerini sıfırlar
+			if (cboxIl.Items.Count > 0)
+				cboxIl.SelectedIndex = 0;
+		}
 
 		private void cboxTur_SelectedIndexChanged(object sender, EventArgs e)
 		{
